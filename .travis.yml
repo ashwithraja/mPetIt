@@ -1,5 +1,5 @@
 language: java
-before_script:
+before_install:
   # download the lates android ssdk and unzip 
   - sudo wget -q http://dl.google.com/android/android-sdk_r18-linux.tgz 
   - sudo tar -xzvf android-sdk_r18-linux.tgz > /dev/null
@@ -9,12 +9,6 @@ before_script:
   - sudo android-sdk-linux/tools/android -s update test-project --path ./mSiS-test -m ../mSiS-app
   - sudo chmod -R 777 ./*
 script: "./buildstuff.sh"
-
-
-
-
-
-
 
 
 
