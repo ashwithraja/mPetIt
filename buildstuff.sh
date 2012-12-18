@@ -1,7 +1,8 @@
 #!/bin/bash
 FAILED=0
+
 cd ./mSiS-app
-ant -f ./../build.xml
+ant -f build.xml
 ant clean
 ant debug
 if [ "$?" = 1 ]; then
