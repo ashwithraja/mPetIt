@@ -1,6 +1,6 @@
 #!/bin/bash
 FAILED=0
-
+echo "build started"
 cd ./mSiS-app
 ant -f build.xml
 ant clean
